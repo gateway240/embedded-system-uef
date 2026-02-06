@@ -6,6 +6,7 @@
 void setup() {
   Wire.begin(); // Initialize I2C
   Serial.begin(9600); 
+  while (!Serial);   // important on Nano Every
 }
 
 void loop() {

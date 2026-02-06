@@ -26,12 +26,14 @@ Configure the OLED and accelerometer
 
 
 1. Install `Adafruit SSD1306 by Adafruit` in the Arduino IDE and optionally
-`U8g2 by oliver` for a second OLED driver library option (it handles fonts better).
-2. Wire the OLED and Accelerometer to the SCL and SDA ports of the board. DO NOT use external pullup resistors with the OLED display. It won't work. Wire the 3.3V power output to the VCC line. DO NOT wire 5V to the accelerometer or it will kill the sensor.
-### Troubleshooting
+`U8g2 by oliver` for a second OLED driver library option (it handles fonts better). Also install the `STM32duino LIS2DW12 by SRA` library for the accelerometer.
+2. Wire the OLED and accelerometer to the SCL and SDA ports of the board. DO NOT use external pullup resistors with the OLED display. It won't work. Wire the 3.3V power output to the VCC line. DO NOT wire 5V to the accelerometer or it will kill the sensor.
+### For Reference
 - [Installing libraries in Arduino](https://docs.arduino.cc/software/ide-v1/tutorials/installing-libraries)
 - [DFRobot Monochrome OLED Display](https://wiki.dfrobot.com/Monochrome_0.96_128x64_IIC_SPI_OLED_Display_SKU_DFR0650#FAQ)
+- [DFRobot LIS2DW12 Triple Axis Accelerometer](https://wiki.dfrobot.com/LIS2DW12_Triple_Axis_Accelerometer_SKU_SEN0405#)
 - [DIY Simple Three-axis Accelerometer Data Logger](https://community.dfrobot.com/makelog-313124.html)
+- [I2C Protocol](https://www.compilenrun.com/docs/iot/arduino/arduino-communication/arduino-i2c-protocol)
 
 ## Exercise 3 - Gyroscope
 
