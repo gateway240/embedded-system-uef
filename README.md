@@ -39,14 +39,14 @@ Configure the accelerometer & OLED Screen
 Add the gyroscope sensor
 ### Steps
 
-1. Install `Adafruit MPU6050 by Adafruit` in the Arduino IDE.
+1. Install `Adafruit MPU6050 by Adafruit` and `MPU6050 by Electronic Cats` in the Arduino IDE.
 2. Wire the OLED, accelerometer, and gyroscope to the SCL and SDA ports of the board. Follow the same precautions as before and ensure you use 3.3V power.
 
 ### Troubleshooting
 
 ### For Reference
 - [DFRobot 6DOF MPU6050 Gyroscope](https://wiki.dfrobot.com/6_DOF_Sensor-MPU6050__SKU_SEN0142_)
-
+- [Complimentary Filters](https://web.archive.org/web/20220518025559/http://www.pieter-jan.com/node/11)
 
 
 
