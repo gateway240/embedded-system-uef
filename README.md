@@ -20,8 +20,8 @@ Setup Arduino IDE for Nano Sense Every
 
 
 
-## Exercise 2 - Accelerometer
-Configure the OLED and accelerometer
+## Exercise 2 - Accelerometer & Screen
+Configure the accelerometer & OLED Screen
 ### Steps
 
 
@@ -36,15 +36,16 @@ Configure the OLED and accelerometer
 - [I2C Protocol](https://www.compilenrun.com/docs/iot/arduino/arduino-communication/arduino-i2c-protocol)
 
 ## Exercise 3 - Gyroscope
-
+Add the gyroscope sensor
 ### Steps
 
+1. Install `Adafruit MPU6050 by Adafruit` in the Arduino IDE.
+2. Wire the OLED, accelerometer, and gyroscope to the SCL and SDA ports of the board. Follow the same precautions as before and ensure you use 3.3V power.
 
-1.
 ### Troubleshooting
 
-- 
-
+### For Reference
+- [DFRobot 6DOF MPU6050 Gyroscope](https://wiki.dfrobot.com/6_DOF_Sensor-MPU6050__SKU_SEN0142_)
 
 
 
