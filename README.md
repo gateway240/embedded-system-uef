@@ -46,7 +46,12 @@ Add the gyroscope sensor
 
 ### For Reference
 - [DFRobot 6DOF MPU6050 Gyroscope](https://wiki.dfrobot.com/6_DOF_Sensor-MPU6050__SKU_SEN0142_)
+- [DFRobot 6DOF MPU6050 Data Sheet](https://dfimg.dfrobot.com/enshop/image/data/SEN0142/PS-MPU-6000A.pdf)
 - [Complimentary Filters](https://web.archive.org/web/20220518025559/http://www.pieter-jan.com/node/11)
 
 
+## Exercise 4 - Magnetometer
 
+### For Reference
+- [DFRobot BMM150 Triple Axis Magnetometer ](https://wiki.dfrobot.com/SKU_SEN0419_Fermion_BMM150_Triple_Axis_Magnetometer_Sensor_Breakout)
+- [Arduino Nano Every MCU Data Sheet](https://content.arduino.cc/assets/Nano-Every_processor-48-pin-Data-Sheet-megaAVR-0-series-DS40002016B.pdf)
