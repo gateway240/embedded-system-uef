@@ -17,7 +17,7 @@ Setup Arduino IDE for Nano Sense Every
 ### Troubleshooting
 
 - [”avrdude: jtagmkII_initialize(): Cannot locate "flash" and "boot" memories in description"](https://support.arduino.cc/hc/en-us/articles/4405239282578-If-you-see-a-jtagmkII-initialize-Cannot-locate-flash-and-boot-memories-in-description-message-when-uploading-to-Nano-Every)
-
+- [Arduino Debugging Basics](https://docs.arduino.cc/learn/microcontrollers/debugging/)
 
 
 ## Exercise 2 - Accelerometer & Screen
@@ -55,3 +55,19 @@ Add the gyroscope sensor
 ### For Reference
 - [DFRobot BMM150 Triple Axis Magnetometer ](https://wiki.dfrobot.com/SKU_SEN0419_Fermion_BMM150_Triple_Axis_Magnetometer_Sensor_Breakout)
 - [Arduino Nano Every MCU Data Sheet](https://content.arduino.cc/assets/Nano-Every_processor-48-pin-Data-Sheet-megaAVR-0-series-DS40002016B.pdf)
+
+## Oscilloscope Tutorial
+See the `oscilloscope_tutorial` folder for code samples to run.
+The tutorial is adapted from [Six Oscilloscope Measurements with Arduino](https://www.baldengineer.com/six-oscilloscope-measurements-using-arduino.html)
+and more detailed information can be found there.
+
+To complete the challenge follow these steps:
+1. Check Auto-RESET on Arduino Nano Every. Locate the correct resistor via the datasheet and PCB diagram and probe it.
+2. Check the TX/RX decode behavior. Run both the `2_uart_...` scripts. What is the difference between them?
+3. Measured the 3.3V DC Voltage rail. Also measure the 5V voltage rail
+4. See probe loading in action. Test a ceramic capacitor on the board and notice a difference!
+5. 
+
+This tutorial also uses concepts from the following:
+- [Arduino Nano Every Register Deep Dive](https://wolles-elektronikkiste.de/en/arduino-nano-every-a-deep-dive)
+- [Arduino Nano Every Timers and PWM](https://emalliab.wordpress.com/2022/01/23/arduino-nano-every-timers-and-pwm/)
