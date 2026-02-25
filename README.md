@@ -66,8 +66,12 @@ To complete the challenge follow these steps:
 2. Check the TX/RX decode behavior. Run both the `2_uart_...` scripts. What is the difference between them?
 3. Measured the 3.3V DC Voltage rail. Also measure the 5V voltage rail
 4. See probe loading in action. Test a ceramic capacitor on the board and notice a difference!
-5. 
+5. PWM Duty Cycle testing with sound!
+6. digitalWrite and port manipulation
+7. Tone generation with register programming
 
 This tutorial also uses concepts from the following:
 - [Arduino Nano Every Register Deep Dive](https://wolles-elektronikkiste.de/en/arduino-nano-every-a-deep-dive)
 - [Arduino Nano Every Timers and PWM](https://emalliab.wordpress.com/2022/01/23/arduino-nano-every-timers-and-pwm/)
+- [Arduino Nano Every ATMega4808/4809 Data Sheet](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/ATmega4808-09-DataSheet-DS40002173C.pdf)
+- [Songs with the buzzer](https://github.com/hibit-dev/buzzer/tree/master/src/songs)
