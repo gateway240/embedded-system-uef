@@ -52,6 +52,8 @@ Add the gyroscope sensor
 
 ## Exercise 4 - Magnetometer
 
+1. Install `DFRobot_BMM150 by DFRobot` in the Arduino IDE.
+
 ### For Reference
 - [DFRobot BMM150 Triple Axis Magnetometer ](https://wiki.dfrobot.com/SKU_SEN0419_Fermion_BMM150_Triple_Axis_Magnetometer_Sensor_Breakout)
 - [Arduino Nano Every MCU Data Sheet](https://content.arduino.cc/assets/Nano-Every_processor-48-pin-Data-Sheet-megaAVR-0-series-DS40002016B.pdf)
