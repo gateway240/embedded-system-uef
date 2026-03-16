@@ -26,7 +26,7 @@ Configure the accelerometer & OLED Screen
 
 
 1. Install `Adafruit SSD1306 by Adafruit` in the Arduino IDE and optionally
-`U8g2 by oliver` for a second OLED driver library option (it handles fonts better). Also install the `STM32duino LIS2DW12 by SRA` library for the accelerometer.
+`U8g2 by oliver` for a second OLED driver library option (it handles fonts better). Also install the `STM32duino LIS2DW12 by SRA` library for the accelerometer. You can also use `DFRobot_LIS by DFRobot` for the `DFRobot_LIS2DW12.h` header 
 2. Wire the OLED and accelerometer to the SCL and SDA ports of the board. DO NOT use external pullup resistors with the OLED display. It won't work. Wire the 3.3V power output to the VCC line. DO NOT wire 5V to the accelerometer or it will kill the sensor.
 ### For Reference
 - [Installing libraries in Arduino](https://docs.arduino.cc/software/ide-v1/tutorials/installing-libraries)
@@ -77,3 +77,28 @@ This tutorial also uses concepts from the following:
 - [Arduino Nano Every Timers and PWM](https://emalliab.wordpress.com/2022/01/23/arduino-nano-every-timers-and-pwm/)
 - [Arduino Nano Every ATMega4808/4809 Data Sheet](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/ATmega4808-09-DataSheet-DS40002173C.pdf)
 - [Songs with the buzzer](https://github.com/hibit-dev/buzzer/tree/master/src/songs)
+
+## Exercise 06 - Arduino Nicola Sense ME
+
+1. In the Arduino IDE, install `Arduino Mbed OS Nicla Boards by Arduino` in the Boards Manager
+2. Configure the board setup as `Arduino Nicla Sense ME`
+3. Test the `led_blink` sketch and verify the on-board LED blinks
+> NOTE:  If you get the following error (or something like it):
+```bash
+Error: unable to open CMSIS-DAP device 0x2341:0x60
+Error: unable to find a matching CMSIS-DAP device nicla sense me
+```
+make sure you update your udev rules (as the library install says) by running 
+```cpp
+sudo "~/.arduino15/packages/arduino/hardware/mbed_nicla/4.5.0/post_install.sh"
+```
+4. Verify that the LED is blinking white (red, green, blue combined).
+5. Install `Arduino_BHY2 by Arduino` and `ArduinoBLE by Arduino` in the Library Manager
+6. Run the `all_sensors_serial_read` example
+
+
+
+### References
+
+- [Arduino IDE Firmware](https://docs.arduino.cc/tutorials/nicla-sense-me/cheat-sheet/#bsx-sensor-fusion-software)
+- [Nicla Sense ME User Manual](https://docs.arduino.cc/tutorials/nicla-sense-me/user-manual/)
