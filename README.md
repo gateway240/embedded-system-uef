@@ -95,8 +95,8 @@ sudo "~/.arduino15/packages/arduino/hardware/mbed_nicla/4.5.0/post_install.sh"
 4. Verify that the LED is blinking white (red, green, blue combined).
 5. Install `Arduino_BHY2 by Arduino` and `ArduinoBLE by Arduino` in the Library Manager
 6. Run the `all_sensors_serial_read` example
-
-
+7. Clone the zehpyr repository somewhere `git clone https://github.com/gateway240/zephyr-nicla-sense-me.git`
+8. Setup the [zephyr repository](https://github.com/gateway240/zephyr-nicla-sense-me) according to the README
 
 ### References
 
