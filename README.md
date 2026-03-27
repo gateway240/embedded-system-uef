@@ -90,7 +90,7 @@ Error: unable to find a matching CMSIS-DAP device nicla sense me
 ```
 make sure you update your udev rules (as the library install says) by running 
 ```cpp
-sudo "~/.arduino15/packages/arduino/hardware/mbed_nicla/4.5.0/post_install.sh"
+sudo "/home/alexbeat/.arduino15/packages/arduino/hardware/mbed_nicla/4.5.0/post_install.sh"
 ```
 4. Verify that the LED is blinking white (red, green, blue combined).
 5. Install `Arduino_BHY2 by Arduino` and `ArduinoBLE by Arduino` in the Library Manager
@@ -102,3 +102,41 @@ sudo "~/.arduino15/packages/arduino/hardware/mbed_nicla/4.5.0/post_install.sh"
 
 - [Arduino IDE Firmware](https://docs.arduino.cc/tutorials/nicla-sense-me/cheat-sheet/#bsx-sensor-fusion-software)
 - [Nicla Sense ME User Manual](https://docs.arduino.cc/tutorials/nicla-sense-me/user-manual/)
+
+## Exercise 07 - MVP Start
+
+## Exercise 08 - Embedded AI with BeagleBoardY-AI
+
+Follow [the getting started guide](https://docs.beagle.cc/boards/beagley/ai/02-quick-start.html#connecting-to-wifi)
+for the BeagleBoardY-AI.
+
+Tasks:
+
+1. Setup the boot media with bb-imager or Balena Etcher and insert the SD card into the board.
+Please mount the heatsinks at least on CPU and RAM of the BeagleY-AI development board. Here is the [reference of their location](https://docs.beagle.cc/boards/beagley/ai/01-introduction.html#board-components-location).
+
+2. Connect your board and ssh into it. Run `echo "hello world!"`. Setup key-based ssh authentication with the dev board.
+3. Setup WiFi on the board using `iwctl`
+
+## Exercise 09 - Algorithms & Object Detection
+
+Comparison between Beagle and Laptop performance:
+![Benchmark ](alg-bench-stack.png)
+
+Tasks:
+
+1. Clone the [demo repository](https://github.com/gateway240/beagley-ai-demos) onto the BeagleBoard and compile and run the `02-alg-bench`. Also run the benchmark on your normal computer and compare results 
+(like the graph above).
+
+2. Connect the camera and run the `03-object-detection` example Python app.
+Transfer a collected image from the BeagleBoard to your computer and display it.
+
+3. Run the `04-web-app` demo and connect to the web app in your browser on `localhost` on your computer.
+ Show your working example!
+
+References:
+- [R5 core on BeagleY-AI](https://forum.beagleboard.org/t/making-use-of-r5-on-beagley-ai/38062/29)
+- [BeagleY-AI R5 Zephyr fimrware](https://github.com/gateway240/beagley-ai-demos/tree/main)
+
+## Exercise 10
+
