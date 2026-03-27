@@ -136,7 +136,7 @@ Transfer a collected image from the BeagleBoard to your computer and display it.
 
 References:
 - [R5 core on BeagleY-AI](https://forum.beagleboard.org/t/making-use-of-r5-on-beagley-ai/38062/29)
-- [BeagleY-AI R5 Zephyr fimrware](https://github.com/gateway240/beagley-ai-demos/tree/main)
+- [BeagleY-AI R5 Zephyr firmware](https://github.com/gateway240/beagley-ai-demos/tree/main)
 
-## Exercise 10
+## Exercise 10 - MVP fabrication start!
 
